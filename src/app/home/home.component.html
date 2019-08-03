@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mt-2" *ngFor="let i of [1, 2, 3, 4, 5]">
+        <div class="card-body">
+          <h5>
+            <a routerLink="/blog/1/react_node_server_side_pagination_example">
+              React + Node - Server Side Pagination Tutorial & Example</a
+            >
+          </h5>
+          <p class="text-secondary">
+            A simple example of how to implement server-side pagination in React
+            with a Node.js backend API.
+          </p>
+          <p>
+            <em class="text-secondary"> 1 Aug 2019</em>
+            <span class="pull-right nav-bg">
+              <i class="fa fa-eye ml-3 nav-bg"></i> 20
+            </span>
+            <span class="pull-right nav-bg">
+              <i class="fa fa-heart "></i> 20
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #fff !important;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #333 !important;
+}
+
+.navbar {
+  padding: 10px;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 2px 2px #949258;
+  letter-spacing: 2px;
+}
+.blog-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  // text-shadow: 2px 2px #949258;
+  letter-spacing: 1px;
+  color: #16a085;
+}
+.bg-dark {
+  background-color: #16a085 !important;
+}
+
+.card-body h5 a {
+  color: #16a085;
+  font-weight: 800;
+}
+.nav-bg,
+.nav-bg span {
+  color: #16a085;
+  font-weight: 800;
+}
+td a {
+  color: #16a085;
+  font-weight: 800;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+.footer-copyright,
+.footer-copyright a,
+.footer-copyright a:hover {
+  background: #186b5b;
+  color: #fff;
+}
+
+.footer-bg {
+  background-color: #16a085 !important;
+  padding: 20px;
+  color: #fff;
+}
+.working-company,
+.working-company:hover {
+  color: #fff;
+  font-weight: 800;
+}

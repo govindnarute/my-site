@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <table class="table ">
+        <tr>
+          <th>#</th>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+        <tbody>
+          <tr *ngFor="let i of [1, 2, 3, 4, 5]; let index = index">
+            <td>{{ index + 1 }}</td>
+            <td>July 18 2019</td>
+            <td>
+              <a href=""
+                >React + Node - Server Side Pagination Tutorial & Example</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
