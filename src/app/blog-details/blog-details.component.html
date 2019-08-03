@@ -1,13 +1,35 @@
 <app-navbar></app-navbar>
 <div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ post?.title }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-12">
       <h4 class="blog-title text-center mt-5 ">
-        React + Node - Server Side Pagination Tutorial & Example
+        {{ post?.title }}
       </h4>
     </div>
   </div>
   <hr />
+  <div class="row">
+    <div class="col-md-12">
+      <div
+        style="padding: 20px"
+        [innerHtml]="post?.description | safe: 'html'"
+      ></div>
+    </div>
+  </div>
 </div>
 
 <app-footer></app-footer>

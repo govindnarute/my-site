@@ -11,8 +11,19 @@ export class PostsService {
   getposts() {
     return this.http.get(ApiEndpoint.URL + 'admin/posts')
   }
+  getpostSite() {
+    return this.http.get(ApiEndpoint.URL + 'admin/posts/site')
+  }
   getpost(id) {
     return this.http.get(ApiEndpoint.URL + 'admin/posts/' + id)
+  }
+  updateViewCount(id, view_count) {
+    return this.http.put(
+      ApiEndpoint.URL + 'admin/posts/' + id + '/view_count',
+      {
+        view_count: view_count
+      }
+    )
   }
 
   savePost(title, short_description, description, url_key) {

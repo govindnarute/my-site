@@ -14,7 +14,35 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <div class="card mt-2" *ngFor="let i of [1, 2, 3, 4, 5]">
+      <div class="card mt-2" *ngFor="let i of posts">
+        <div class="card-body">
+          <h5>
+            <a routerLink="/blog/{{ i._id }}/{{ i.url_key }}">
+              {{ i?.title }}</a
+            >
+          </h5>
+          <p class="text-secondary">
+            {{ i?.short_description }}
+          </p>
+          <p>
+            <em class="text-secondary">
+              {{ i.created_at | date: 'mediumDate' }}</em
+            >
+            <span class="pull-right nav-bg">
+              <i class="fa fa-eye ml-3 nav-bg"></i> {{ i?.view_count }}
+            </span>
+            <!-- <span class="pull-right nav-bg">
+                <i class="fa fa-heart "></i> 20
+              </span> -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="false">
+    <div class="col-md-12">
+      <div class="card mt-2" *ngFor="let i of [1]">
         <div class="card-body">
           <h5>
             <a routerLink="/blog/1/react_node_server_side_pagination_example">
