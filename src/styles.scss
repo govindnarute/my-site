@@ -73,3 +73,26 @@ td a {
   color: #fff;
   font-weight: 800;
 }
+.btn-primary {
+  background-color: #16a085 !important;
+  border-color: #16a085 !important;
+  color: #fff;
+}
+
+.ql-syntax {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+  border-radius: 20px;
+}
+.errors {
+  padding: 20px !important;
+  color: #fff;
+}
+
+a.btn-primary,
+a.btn-primary:hover {
+  background: #16a085;
+  color: #fff !important;
+  cursor: pointer;
+}

@@ -13,7 +13,10 @@ import { HomeComponent } from './home/home.component'
 import { ArchiveComponent } from './archive/archive.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { FooterComponent } from './footer/footer.component';
-import { PortfolioComponent } from './portfolio/portfolio.component'
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PostsComponent } from './admin/posts/posts.component';
+import { AdminNavbarComponent } from './admin/admin-navbar/admin-navbar.component';
+import { AddPostComponent } from './admin/add-post/add-post.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component'
     ArchiveComponent,
     BlogDetailsComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    PostsComponent,
+    AdminNavbarComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,

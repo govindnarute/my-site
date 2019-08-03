@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component'
 import { ArchiveComponent } from './archive/archive.component'
 import { BlogDetailsComponent } from './blog-details/blog-details.component'
 import { PortfolioComponent } from './portfolio/portfolio.component'
+import { PostsComponent } from './admin/posts/posts.component'
+import { AddPostComponent } from './admin/add-post/add-post.component'
 
 const routes: Routes = [
   {
@@ -23,7 +25,15 @@ const routes: Routes = [
     component: PortfolioComponent
   },
   {
-    path: '**',
+    path: 'admin/posts',
+    component: PostsComponent
+  },
+  {
+    path: 'admin/posts/new',
+    component: AddPostComponent
+  },
+  {
+    path: '*',
     component: HomeComponent
   }
 ]

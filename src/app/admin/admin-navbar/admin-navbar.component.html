@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#" style="display: flex">
+    <img
+      src="/assets/images/my-photo.jpg"
+      alt="Logo"
+      class="rounded-circle mt-2"
+      width="60px"
+      height="60px"
+    />
+    <p
+      style="display: flex; flex-direction: column; padding: 10px;margin-left: 10%;"
+    >
+      <span class="title">Govind Narute's Blog</span>
+      <span class="sub-title"> Fullstack Developer in Pune</span>
+    </p>
+  </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#collapsibleNavbar"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div
+    class="collapse navbar-collapse justify-content-end"
+    id="collapsibleNavbar"
+  >
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin/posts">Posts</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/portfolio">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,13 @@
+.bg-dark {
+  background-color: #16a085 !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .nav-item {
+    margin-right: 10%;
+  }
+}

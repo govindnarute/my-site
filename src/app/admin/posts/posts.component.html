@@ -1,0 +1,42 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="container-fluid">
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <a routerLink="/admin/posts/new" class="pull-right btn btn-primary"
+        >Add Post</a
+      >
+    </div>
+    <div class="col-md-12">
+      <table class="table ">
+        <tr>
+          <th>#</th>
+          <th>Date</th>
+          <th>Title</th>
+          <th>View/Edit</th>
+          <th>Action</th>
+        </tr>
+        <tbody>
+          <tr *ngFor="let i of [1, 2, 3, 4, 5]; let index = index">
+            <td>{{ index + 1 }}</td>
+            <td>July 18 2019</td>
+            <td>
+              <a href=""
+                >React + Node - Server Side Pagination Tutorial & Example</a
+              >
+            </td>
+            <td>
+              <button class="btn btn-primary mr-2">View</button>
+              <button class="btn btn-primary ">Edit</button>
+            </td>
+            <td>
+              <button class="btn btn-primary mr-2">Publish</button>
+              <button class="btn btn-danger ">Unpublish</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
