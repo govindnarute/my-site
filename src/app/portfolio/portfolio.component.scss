@@ -25,6 +25,15 @@
   width: 100%; /* Set full-width to expand the whole page */
 }
 
+.working-company1,
+.working-company1:hover {
+  color: #16a085;
+}
+.portfolio-name {
+  font-weight: 800;
+  text-shadow: 2px 2px #949258;
+  letter-spacing: 2px;
+}
 @media (min-width: 768px) {
   .col-container {
     display: flex;
