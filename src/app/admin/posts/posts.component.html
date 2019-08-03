@@ -28,11 +28,21 @@
             </td>
 
             <td>
-              <button class="btn btn-primary mr-2 ">Edit</button>
-              <button class="btn btn-primary mr-2" *ngIf="!i.is_publish">
+              <button class="btn btn-primary mr-2 " (click)="goToEdit(i._id)">
+                Edit
+              </button>
+              <button
+                class="btn btn-primary mr-2"
+                (click)="postPublish(i._id)"
+                *ngIf="!i.is_publish"
+              >
                 Publish
               </button>
-              <button class="btn btn-danger" *ngIf="i.is_publish">
+              <button
+                class="btn btn-danger"
+                *ngIf="i.is_publish"
+                (click)="unPublish(i._id)"
+              >
                 Unpublish
               </button>
             </td>

@@ -21,6 +21,8 @@ import { AddPostComponent } from './admin/add-post/add-post.component'
 import { AdminBlogDetailsComponent } from './admin/admin-blog-details/admin-blog-details.component'
 import { LoginComponent } from './admin/login/login.component'
 import { TokenIterceptorService } from './services/token-iterceptor.service'
+import { NgxWebstorageModule } from 'ngx-webstorage';
+import { UpdatePostComponent } from './admin/update-post/update-post.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { TokenIterceptorService } from './services/token-iterceptor.service'
     AdminNavbarComponent,
     AddPostComponent,
     AdminBlogDetailsComponent,
-    LoginComponent
+    LoginComponent,
+    UpdatePostComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { TokenIterceptorService } from './services/token-iterceptor.service'
     HttpClientModule,
     FormsModule,
     QuillModule.forRoot(),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    NgxWebstorageModule.forRoot()
   ],
   providers: [
     {

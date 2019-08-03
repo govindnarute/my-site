@@ -23,4 +23,13 @@ export class PostsService {
       url_key: url_key
     })
   }
+  postPublish(id) {
+    return this.http.put(ApiEndpoint.URL + 'admin/posts/' + id + '/publish', {})
+  }
+  unPublish(id) {
+    return this.http.put(
+      ApiEndpoint.URL + 'admin/posts/' + id + '/unpublish',
+      {}
+    )
+  }
 }

@@ -8,6 +8,8 @@ import { PostsComponent } from './admin/posts/posts.component'
 import { AddPostComponent } from './admin/add-post/add-post.component'
 import { AdminBlogDetailsComponent } from './admin/admin-blog-details/admin-blog-details.component'
 import { LoginComponent } from './admin/login/login.component'
+import { AuthGuard } from './auth.guard'
+import { UpdatePostComponent } from './admin/update-post/update-post.component'
 
 const routes: Routes = [
   {
@@ -29,16 +31,24 @@ const routes: Routes = [
   { path: 'admin/login', component: LoginComponent },
   {
     path: 'admin/posts',
-    component: PostsComponent
+    component: PostsComponent,
+    canActivate: [AuthGuard]
   },
 
   {
     path: 'admin/posts/new',
-    component: AddPostComponent
+    component: AddPostComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'admin/posts/update/:id',
+    component: UpdatePostComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'admin/blog/:id/:title',
-    component: AdminBlogDetailsComponent
+    component: AdminBlogDetailsComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: '*',
