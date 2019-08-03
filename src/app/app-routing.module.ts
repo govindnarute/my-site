@@ -7,6 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component'
 import { PostsComponent } from './admin/posts/posts.component'
 import { AddPostComponent } from './admin/add-post/add-post.component'
 import { AdminBlogDetailsComponent } from './admin/admin-blog-details/admin-blog-details.component'
+import { LoginComponent } from './admin/login/login.component'
 
 const routes: Routes = [
   {
@@ -25,10 +26,12 @@ const routes: Routes = [
     path: 'portfolio',
     component: PortfolioComponent
   },
+  { path: 'admin/login', component: LoginComponent },
   {
     path: 'admin/posts',
     component: PostsComponent
   },
+
   {
     path: 'admin/posts/new',
     component: AddPostComponent
