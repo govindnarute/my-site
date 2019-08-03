@@ -6,6 +6,7 @@ import { BlogDetailsComponent } from './blog-details/blog-details.component'
 import { PortfolioComponent } from './portfolio/portfolio.component'
 import { PostsComponent } from './admin/posts/posts.component'
 import { AddPostComponent } from './admin/add-post/add-post.component'
+import { AdminBlogDetailsComponent } from './admin/admin-blog-details/admin-blog-details.component'
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'admin/posts/new',
     component: AddPostComponent
+  },
+  {
+    path: 'admin/blog/:id/:title',
+    component: AdminBlogDetailsComponent
   },
   {
     path: '*',

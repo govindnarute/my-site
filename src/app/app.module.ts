@@ -16,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PostsComponent } from './admin/posts/posts.component';
 import { AdminNavbarComponent } from './admin/admin-navbar/admin-navbar.component';
-import { AddPostComponent } from './admin/add-post/add-post.component'
+import { AddPostComponent } from './admin/add-post/add-post.component';
+import { AdminBlogDetailsComponent } from './admin/admin-blog-details/admin-blog-details.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AddPostComponent } from './admin/add-post/add-post.component'
     PortfolioComponent,
     PostsComponent,
     AdminNavbarComponent,
-    AddPostComponent
+    AddPostComponent,
+    AdminBlogDetailsComponent
   ],
   imports: [
     BrowserModule,

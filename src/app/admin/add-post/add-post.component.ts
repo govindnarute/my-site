@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core'
+import { PostsService } from 'src/app/services/posts.service'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-add-post',
@@ -12,7 +14,7 @@ export class AddPostComponent implements OnInit {
   description: any = ''
   url_key = ''
   errors: any = []
-  constructor() {}
+  constructor(private postService: PostsService, private router: Router) {}
 
   ngOnInit() {}
 
@@ -32,6 +34,20 @@ export class AddPostComponent implements OnInit {
     }
 
     this.url_key = this.title.split(' ').join('_')
-    console.log(this.url_key)
+    this.postService
+      .savePost(
+        this.title,
+        this.shortDescription,
+        this.description,
+        this.url_key
+      )
+      .subscribe(
+        (res: any) => {
+          if (res.success) {
+            this.router.navigateByUrl('/admin/posts')
+          }
+        },
+        (err: any) => {}
+      )
   }
 }
