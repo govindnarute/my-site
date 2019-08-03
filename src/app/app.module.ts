@@ -12,7 +12,8 @@ import { NavbarComponent } from './navbar/navbar.component'
 import { HomeComponent } from './home/home.component'
 import { ArchiveComponent } from './archive/archive.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { PortfolioComponent } from './portfolio/portfolio.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component'
     HomeComponent,
     ArchiveComponent,
     BlogDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

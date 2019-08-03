@@ -1,0 +1,33 @@
+.masthead {
+  height: 60vh;
+  min-height: 500px;
+  background-image: url('../../assets/images/porfolio-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile {
+  display: flex;
+  padding: 20px;
+}
+
+.title-s {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+.my-details {
+  line-height: 2.5rem;
+}
+.col-container {
+  display: flex; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+
+@media (min-width: 768px) {
+  .col-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
