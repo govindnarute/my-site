@@ -15,7 +15,7 @@ export class UpdatePostComponent implements OnInit {
   description: any = ''
   url_key = ''
   errors: any = []
-
+  post_id: any
   constructor(
     private activateRoute: ActivatedRoute,
     private postService: PostsService,
@@ -24,10 +24,11 @@ export class UpdatePostComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.getPost(this.activateRoute.snapshot.params['id'])
+    this.post_id = this.activateRoute.snapshot.params['id']
+    this.getPost(this.post_id)
   }
 
-  savePost1() {
+  updatePost() {
     this.errors = []
 
     if (
@@ -44,7 +45,8 @@ export class UpdatePostComponent implements OnInit {
 
     this.url_key = this.title.split(' ').join('_')
     this.postService
-      .savePost(
+      .updatePost(
+        this.post_id,
         this.title,
         this.shortDescription,
         this.description,

@@ -1,20 +1,20 @@
 <app-navbar></app-navbar>
 <div class="container-fluid">
-  <div class="row mt-2">
+  <div class="row mt-2" style="min-height: 350px">
     <div class="col-md-12">
-      <table class="table ">
+      <table class="table " x>
         <tr>
           <th>#</th>
           <th>Date</th>
           <th>Title</th>
         </tr>
         <tbody>
-          <tr *ngFor="let i of [1, 2, 3, 4, 5]; let index = index">
+          <tr *ngFor="let i of posts; let index = index">
             <td>{{ index + 1 }}</td>
-            <td>July 18 2019</td>
+            <td>{{ i?.created_at | date: 'mediumDate' }}</td>
             <td>
-              <a href=""
-                >React + Node - Server Side Pagination Tutorial & Example</a
+              <a routerLink="/blog/{{ i._id }}/{{ i.url_key }}">
+                {{ i?.title }}</a
               >
             </td>
           </tr>

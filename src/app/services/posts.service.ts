@@ -34,6 +34,14 @@ export class PostsService {
       url_key: url_key
     })
   }
+  updatePost(id, title, short_description, description, url_key) {
+    return this.http.put(ApiEndpoint.URL + 'admin/posts/' + id, {
+      title: title,
+      short_description: short_description,
+      description: description,
+      url_key: url_key
+    })
+  }
   postPublish(id) {
     return this.http.put(ApiEndpoint.URL + 'admin/posts/' + id + '/publish', {})
   }

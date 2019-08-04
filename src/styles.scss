@@ -104,3 +104,35 @@ a.btn-primary:hover {
   border: 1px solid #e9ecef !important;
   border-radius: 0.25rem;
 }
+
+.site-logo {
+  height: 60px;
+  width: 60px;
+}
+.site-title {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 10%;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 480px) {
+  .font-low {
+    font-size: medium !important;
+  }
+  .site-logo {
+    height: 40px;
+    width: 40px;
+  }
+  .site-title {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 10%;
+    font-size: 12px;
+  }
+}
